@@ -1,0 +1,46 @@
+.fondo{
+    background-color: white;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.897);
+    padding: 5px;;
+    width: 800px;
+    transition: 1s;
+}
+header:hover {
+  background-color: black;
+}
+footer{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.897);
+    padding: 50px;
+}
+div {
+    width: 810px;
+  }
+#main {
+  
+    padding-left: 0.5em;
+    font-size: 2.2em;
+    font-family: "open sans", sans-serif;
+    color: white;
+    text-align: left;
+}
+.title{
+    font-size: 1.3em;
+    text-decoration: underline; 
+    text-underline-offset: 0.2em;
+  }
+  .subtitle{
+    font-size: 1.2em;
+  }
+  .paragraph{
+    font-size: 1.1em;
+    margin: 0.5em;
+  }
+  img{
+    width: 800px;
+    height: 400px;
+    margin: 0.5em;
+  }
+ 

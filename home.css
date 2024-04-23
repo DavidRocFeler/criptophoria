@@ -1,0 +1,112 @@
+.fondo {
+ background-color: white;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.897);
+  transition: 1s;
+  
+  
+  padding: 1.3em;
+}
+header:hover {
+  background-color: black
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.897);
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 50px;
+}
+#encavezado-enlaces {
+  text-align: right;
+  padding-right: 3em;
+}
+nav ul li {
+  display: inline-flex;
+  margin-right: 50px;
+}
+nav ul li a {
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(112, 111, 111);
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: black;
+}
+.imagen-derecha {
+  margin-top: 0.1em;
+  width: 600px;
+  height: 400px;
+}
+#welcome{
+  text-align: justify;
+  font-size: 1.3em; 
+  margin-left: 0.5em;
+  margin-right: 5em;
+  padding-top: 4.5em;
+}
+#welcome-container{
+  
+  padding: 3em;
+  padding-top: 5em;
+  padding-bottom: 1.5em;
+  margin: 0em 2em 3em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+}
+#home-button{
+  padding: 1em 0em 1em 0em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.897);
+  border: 2px solid black;
+  width: 15vw;
+  margin: auto;
+  margin-top: 4em;
+  border-radius: 30px;
+}
+#home-button:hover {
+  background-color: black;
+
+}
+div nav a { 
+  text-decoration: none;
+  color: darkgray;
+  font-size: 1.8em; 
+}
+div nav a:hover {
+  color: white;
+}
+.home-first {
+  
+  width: 90vw;
+  margin: auto;
+  margin-top: 5em; 
+  padding: 0em 0em 0em 0em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.home-second {
+  width: 90vw;
+  margin: auto;
+  margin-top: 5em; 
+  padding: 0em 0em 0em 0em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 5em;
+}
+article {
+  
+  width: 300px;
+  display: flex;
+  flex-direction: column; 
+  gap: 1em;
+  align-items: center;
+  text-align: left;
+}
