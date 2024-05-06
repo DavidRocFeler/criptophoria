@@ -3,35 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suscribete</title>
+    <title>SUBSCRIPTION</MAIN></title>
+    <link rel="stylesheet" href="./styletwe.css">
+
 </head>
 <body>
-    <header>
-        <h1>Fill out the form and find out about our latest publications</h1>
-    </header>
-    <main>
-
-    <form>
-        <div>
-            <label for="Full name">Full name: </label>
-            <input type="text" name="Full name" placeholder="Full name" />
-        </div>
-        <div>
-            <label for="E-mail">E-mail: </label>
-            <input type="email" name="E-mail" placeholder="E-nail" />
-        </div>
-        <div>
-            <label for="Whatsapp number">Whatsapp number: </label>
-            <input type="number" name="Whatsapp number" placeholder="Whatsapp number" />
-        </div>
-        <div>
-            <label for="Calling code">Calling code: </label>
-            <input type="number" name="Calling code" placeholder="Calling code e.g.(+34)" />
-        </div>
-        <button>ENVIAR</button>
-
-    </form> 
-    </main>
     
+    <div id="container">
+  
+        <div id="tabla1" class="background-image">        
+        </div>
+        <hr/>
+   
+        <div id="tabla2">
+                <section>
+                    <div class="heater">
+                        <a href="./home.html">Home</a>
+                        <a href="./art.html">Articles</a>
+                        <a href="./news.html">News</a>
+                        <a href="./learn.html">Learn</a>
+                        <a href="./jobs.html">Jobs</a>      
+                    </div> 
+                </section> <hr/>
+                           
+                <form>
+                    <div class="boxsubscribe" >
+                        <h1>Full name or nickname</h1>
+                        <input type="text" name="" placeholder="">
+                    </div>
+                <hr/>
+            
+                    <div class="boxsubscribe" >
+                        <h1>E-mail</h1>
+                        <input type="email" name="" placeholder="" />
+                    </div>
+                <hr/>
+        
+                    <div class="boxsubscribe" >
+                        <h1>Whatsapp</h1>
+                        <input type="number" name="" placeholder="">
+                    </div>
+                <hr/>
+
+                    <div class="boxsubscribe">
+                        <h1>Country</h1>
+                        <select name="country" id="country-select" disabled>
+                            <option value="" disabled selected></option>
+                        <!-- Las opciones se generarán dinámicamente aquí -->
+                        </select>
+                    </div>
+                <hr/>
+
+                    <div class="boxsubscribe">
+                        <button>Enviar</button>
+                    </div>
+            
+                </form> 
+
+        </div>
+        <hr/>
+       
+        <div id="tabla3" class="background-image">
+        </div>
+        <hr/>
+
+    </div>      
+    
+    <script src="./javascript/countries.js"></script>
 </body>
 </html>
