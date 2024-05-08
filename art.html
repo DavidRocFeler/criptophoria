@@ -5,25 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARTICLES</MAIN></title>
     <link rel="stylesheet" href="./styletwe.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body>
     
     <div id="container">
   
-        <div id="tabla1">        
+        <div id="tabla1">   
+            <table>
+                <thead>
+                    <tr>
+                        <h2>Precio de Bitcoin</h2>
+                    </tr>
+                </thead>
+                <tbody id="bitcoin-precio">
+        <!-- Aquí se llenará el precio de Bitcoin -->
+                </tbody>
+            </table>
+            <div>
+                
+                    <p id="bitcoin-price"></p>
+                        <button onclick="getHistoricalData('1d')">Último día</button>
+                        <button onclick="getHistoricalData('7d')">Últimos 7 días</button>
+                        <button onclick="getHistoricalData('30d')">Último mes</button>
+                        <button onclick="getHistoricalData('365d')">Último año</button>
+                        <button onclick="getHistoricalData('max')">Desde el inicio</button>
+            </div>
+            <canvas id="myChart" width="300" height="200" style="background-color: white; border: 1px solid black;"></canvas>
+
+            
         </div>
         <hr/>
    
         <div id="tabla2">
-                <section>
-                    <div class="heater">
+                <div class="heater">
+                    
                         <a href="./home.html">Home</a>
                         <a href="./news.html">News</a>
                         <a href="./learn.html">Learn</a>
                         <a href="./jobs.html">Jobs</a>      
-                    </div> 
-                </section> <hr/>
+                    
+                </div> <hr/>
     
             <article onclick="window.location='./bitcoin/articles/bitcoin.html';">
                 <section>
@@ -231,5 +254,7 @@
     </div>      
     
     <script src="./javascript/minustrong.js"></script>
+    <script src="./javascript/criptophoriamarket.js"></script>
+    <script src="./javascript/graficas.js"></script>
 </body>
 </html>

@@ -1,13 +1,65 @@
-.fondo{
-    background-color: white;
+.fondo {
+  background-color: white;
+  padding-top: 4em;
 }
-header{
+#divHeader {
+  position: fixed; /* Fijar el encabezado en su lugar */
+  top: 0; /* Anclarlo a la parte superior de la ventana del navegador */
+  width: 100%; /* Ajustar el ancho al 100% de la ventana */
+  z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+   /* Color de fondo del encabezado */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el encabezado */
+  height: 3em; /* Ajustar el height en base al estilo de #divHeader */
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+}
+#divLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  
+}
+#divLogo img {
+  width: 9em;
+  height: 3.5em;
+}
+#encavezado-enlaces {
+  display: flex;
+  background-color: white;
+  height: 3em; 
+  margin-bottom: 1em;
+
+  width: 32em;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+nav ul li {
+  display: inline-flex;
+  margin-right: 50px;
+  line-height: 1em;
+  
+}
+nav ul li a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(112, 111, 111);
+  text-decoration: none; 
+  text-align: end; 
+  
+}
+nav ul li a:hover {
+  color: black;
+}
+
+#divNews{
     background-color: rgba(0, 0, 0, 0.897);
-    padding: 5px;;
+    padding: 5px;
     width: 800px;
-    transition: 1s;
+    transition: 1s;;
 }
-header:hover {
+#divNews:hover {
   background-color: black;
 }
 footer {

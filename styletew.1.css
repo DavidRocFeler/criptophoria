@@ -5,21 +5,14 @@ body {
   }
 #tabla1 {    
     background-color: white;
-    overflow-y: auto;
     width: 24%; 
     }
 #tabla2 {
-    overflow-y: auto;
-    max-height: 43em;
     width:52%;
     font-size: 15px;
     }
-#tabla2::-webkit-scrollbar {
-  width: 0;
-}
 #tabla3 {
     background-color: white;
-    overflow-y: auto;
     width: 24%; 
     }
 .tableleft {
@@ -39,7 +32,7 @@ body {
     border-radius: 10px;
     margin-left: 7%;
 }
-.heater {
+.heater{
     padding-top: 1em;
     width: 100%;
     display: flex;
@@ -64,7 +57,7 @@ article {
     transition: 1s;
     cursor: pointer;
     margin-top: 2em;
-    padding-top: 1em;
+    align-items: start;
     padding-bottom: 1em;
 }
 article:hover {

@@ -9,6 +9,42 @@ header {
 header:hover {
   background-color: black
 }
+.search-container {
+  display: flex;        
+  align-items: center;
+  width: 300px; /* Ajusta el ancho según tus necesidades */
+  height: 0.2em;    
+  justify-content: flex-end;
+  margin-left: auto;    
+}
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //puede servir para algo
+}
+.search-icon img {
+  width: 2.5em;
+  height: 1.5em;
+}
+.search-input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  height: 1.5em;
+  border-radius: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#subscribe {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  margin-right: 1em;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
 footer {
   background-color: #0b343a;
   font-size: 15px;
@@ -26,27 +62,53 @@ footer:hover {
   margin: auto; 
   //falta completar 
 }
+
+#divHeader {
+  background-color: white;
+  display: flex;
+  height: 3em;
+  margin-bottom: 1em;
+  position: -webkit-sticky; /* Para navegadores webkit como Safari */
+  position: sticky;
+  top: 0; 
+  
+}
+#divLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+}
+#divLogo img {
+  width: 10em;
+  height: 3.5em;
+}
 #encavezado-enlaces {
   display: flex;
   background-color: white;
-  height: 3.5em;
-  
+  height: 3em; 
+  margin-bottom: 1em;
+  width: 32em;
+  justify-content: flex-end;
+  margin-left: auto;
 }
 nav ul li {
   display: inline-flex;
   margin-right: 50px;
+  line-height: 1em;  
 }
 nav ul li a {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1em;
-  
+  font-size: 15px;
   font-weight: bold;
   color: rgb(112, 111, 111);
-  text-decoration: none;  
+  text-decoration: none; 
+  text-align: end; 
 }
 nav ul li a:hover {
   color: black;
 }
+
 .imagen-derecha {
   margin-top: 0.1em;
   width: 600px;
@@ -69,6 +131,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;  
+
 }
 #home-button{
   padding: 0.5em 0em 0.5em 0em;
@@ -101,6 +164,7 @@ div nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 10em;
 }
 .home-second {
   width: 90vw;
@@ -115,7 +179,6 @@ div nav a:hover {
 article {
   width: 19em;
   height: 20em;
-  padding-top: 1em;
   display: flex;
   flex-direction: column; 
   gap: 1em;
@@ -144,37 +207,4 @@ strong {
   width: 20vw;
   height: 11.5vw;
   border-radius: 10px;
-}
- .search-container {
-  display: flex;        
-  align-items: center;
-  width: 300px; /* Ajusta el ancho según tus necesidades */
-  height: 0.2em;    
-  margin-right: 1em;     
-}
-.search-icon {
-  padding-top: 0.2em;
-  //puede servir para algo
-}
-.search-input {
-  border: none;
-  outline: none;
-  padding: 10px;
-  font-size: 16px;
-  height: 1.5em;
-  border-radius: 5px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#subscribe {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-left: 60.5em;
-  margin-right: 1em;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  
-  
-}
-#logo {
-  margin-right: 39em;  
 }

@@ -1,0 +1,108 @@
+
+.fondo {
+    background-color: #f4f2ee;
+    padding-top: 4em;
+}
+header {
+    position: fixed; /* Fijar el encabezado en su lugar */
+    top: 0; /* Anclarlo a la parte superior de la ventana del navegador */
+    width: 100%; /* Ajustar el ancho al 100% de la ventana */
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    background-color: white; /* Color de fondo del encabezado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el encabezado */
+    height: 3em; /* Ajustar el height en base al estilo de #divHeader */
+
+}
+#divHeader {
+    
+    background-color: white;
+    display: flex;
+    height: 3em;
+    margin-bottom: 1em
+}
+#divLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+}
+#divLogo img {
+    width: 9em;
+    height: 3.5em;
+}
+#encavezado-enlaces {
+    display: flex;
+    background-color: white;
+    height: 3em; 
+    margin-bottom: 1em;
+
+    width: 32em;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+  nav ul li {
+    display: inline-flex;
+    margin-right: 50px;
+    line-height: 1em;
+    
+  }
+  nav ul li a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(112, 111, 111);
+    text-decoration: none; 
+    text-align: end; 
+    
+  }
+  nav ul li a:hover {
+    color: black;
+  }
+
+#firstContent {
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 43em;
+    border-radius: 10px;
+}
+#firstHeader {
+    line-height: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+#firstHeader h1 {
+    font-size: 30px;
+}
+#firstHeader span {
+    font-size: 15px;
+}
+#firstBlock {
+    line-height: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+#secondContent {
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 43em;
+    border-radius: 10px;
+    padding-bottom: 1em; 
+}
+#secondContent h3 {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+#secondContent h5 {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+.secondBlock {
+    padding-left: 1em;
+    width: 40em;
+}
+ol {
+    list-style-type: disc;
+}
