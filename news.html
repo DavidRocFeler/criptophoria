@@ -3,24 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARTICLES</MAIN></title>
+    <title>News</MAIN></title>
     <link rel="stylesheet" href="./styletwe.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial/dist/chartjs-chart-financial.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0/dist/chartjs-adapter-luxon.min.js"></script>
+
 
 </head>
 <body>
     
     <div id="container">
   
-        <div id="tabla1">        
+        <div id="tabla1">   
+            <table>
+                <thead>
+                    <tr>
+                        <td class="header-container">
+                            <img src="./bitcoin/logo btc.png" alt="">
+                            <h2 id="cryptoName">Bitcoin</h2>
+                            <span>BTC</span>
+                            <select id="crypto-select" class="crypto-select">
+                             
+                            </select>
+                        </td>
+                    </tr>
+                </thead>
+
+                <tbody id="bitcoin-precio"></tbody>
+            
+            </table>
+
+            <div id="graficaMarket" class="button-container">
+                
+                <button data-period="15m">15m</button>
+                <button data-period="1h" >1h</button>
+                <button data-period="4h">4h</button>
+                <button data-period="8h">8h</button>
+                <button data-period="1d" >1d</button>
+                <button data-period="7d" >1w</button>
+                <button data-period="30d" >1M</button>
+               
+            </div>
+            <canvas id="myChart"></canvas>
+
+            <table>
+                <tbody >
+                    <tr id="metrics-data">
+                        <td class="tdtwe">Market cap (24h)</td>
+                        <td id="market-cap-variation"></td>
+                        <td id="market-cap-value"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td id="trtwe">BTC to USD converter</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="single-container">
+                                <div class="btc-section">
+                                    <span class="btc-cell">BTC</span>
+                                    <input type="number" id="btc-input">
+                                </div>
+                                <div class="divider"></div>
+                                <div class="usd-section">
+                                    <span class="usd-cell">USD</span>
+                                    <span id="usd-output"></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          
         </div>
         <hr/>
-   
+           
         <div id="tabla2">
                 <section>
-                    <div class="heater">
+                    <div id="tableHeader">
                         <a href="./home.html">Home</a>
                         <a href="./art.html">Articles</a>
-                        <a href="./learn.html">Learn</a>
+                        <a href="./learninprocess.html">Learn</a>
                         <a href="./jobs.html">Jobs</a>      
                     </div> 
                 </section> <hr/>
@@ -28,6 +97,7 @@
             <article onclick="window.location='./bitcoin/news/btcone.html';">
                 <section>
                     <div id="containtext">
+                        <p p class="tiempo-transcurrido" data-fecha-publicacion="2024-05-06T01:30:00"></p>
                         <strong>Mr. 100', the mysterious cryptocurrency...</strong>
                         <p>The transaction involved the acquisition of 4,100 BTC, amounting to a total of 
                             $238 million, at a time when each coin was valued at $58,000...
@@ -42,6 +112,7 @@
             <article onclick="window.location='./ethereum/news/ethone.html';">
                 <section>
                     <div>
+                        <p p class="tiempo-transcurrido" data-fecha-publicacion="2024-05-07T20:30:00"></p>
                         <strong>On May 7th, Ethereum's market value...</strong>
                         <p>Ether, also known as Ethereum, ranks as the second-largest virtual 
                             currency by market capitalization...
@@ -56,6 +127,7 @@
             <article onclick="window.location='./theter/news/usdtone.html';">
                 <section>
                     <div>
+                        <p p class="tiempo-transcurrido" data-fecha-publicacion="2024-05-08T20:30:00"></p>
                         <strong>Strengthening Oversight: Tether Partners...</strong>
                         <p>Tether announces partnership with Chainalysis
                             Aims to enhance monitoring of USDT in secondary markets...
@@ -70,6 +142,7 @@
             <article onclick="window.location='./binance/news/bnbone.html';">
                 <section>
                     <div>
+                        <p p class="tiempo-transcurrido" data-fecha-publicacion="2024-05-09T20:30:00"></p>
                         <strong>Nigerian Court Delays Money Laundering...</strong>
                         <p>Apparently, a Nigerian judge has postponed the trial against 
                             Binance and two executives until May 17 so...
@@ -84,6 +157,7 @@
             <article onclick="window.location='./solana/news/solone.html';">
                 <section>
                     <div>
+                        <p p class="tiempo-transcurrido" data-fecha-publicacion="2024-05-10T20:30:00"></p>
                         <strong>Solana and Ethereum Gain Traction in the...</strong>
                         <p>Last week, STEPN, a Web3 lifestyle application with social and gaming 
                             elements, welcomed Adidas (ETR:ADSGN) to the Solana network...
@@ -98,6 +172,7 @@
             <article onclick="window.location='./cardano/news/adaone.html';">
                 <section>
                     <div>
+                        <p p class="tiempo-transcurrido" data-fecha-publicacion="2024-05-11T20:30:00"></p>
                         <strong>ADA Whale Activity Sparks Speculation...</strong>
                         <p>Cardano whales continue to accumulate altcoins despite a 30% drop in 
                             its value over the past month...
@@ -109,117 +184,7 @@
                 </section>
             </article>
         
-            <article onclick="window.location='./ripple.html';">
-                <section>
-                    <div>
-                        <strong>THE DIGITAL ASSET FOR GLOBAL PAYMENTS </strong>
-                        <p>In the dynamic world of cryptocurrencies, XRP stands out as a digital 
-                            asset designed for revolutionizing cross-border payments...
-                        </p>
-                    </div>    
-                </section>
-                <section>
-                    <img src="./ripple/ripple2.jpg" alt="" class="tablecenter">
-                </section>
-            </article>
-        
-            <article onclick="window.location='./doge.html';">
-                <section>
-                    <div>
-                        <strong>THE PLAYFUL CRYPTOCURRENCY WITH A...</strong>
-                        <p>In the vibrant and eclectic world of cryptocurrencies, Dogecoin
-                            stands out as a digital asset with a unique charm and a devoted community...
-                        </p>
-                    </div>    
-                </section>
-                <section>
-                    <img src="./DOGE/DOGECOIN 2.jpg" alt="" class="tablecenter">
-                </section>
-            </article>
-        
-            <article onclick="window.location='./toncoin.html';">
-                <section>
-                    <div>
-                        <strong>REVOLUTIONIZING PAYMENTS ON THE...</strong>
-                        <p>Toncoin (TON) emerges as the native cryptocurrency powering 
-                            The Open Network (TON), a decentralized blockchain revolutionizing global payments...
-                        </p>
-                    </div>    
-                </section>
-                <section>
-                    <img src="./Toncoin/toncoin 1.jpg" alt="" class="tablecenter">
-                </section>
-            </article>
-        
-            <article onclick="window.location='./cardano.html';">
-                <section>
-                    <div>
-                        <strong> EMPOWERING GLOBAL CHANGE...</strong>
-                        <p>Cardano is a proof-of-stake blockchain platform designed to empower 
-                            changemakers, innovators, and visionaries to drive positive global change...
-                        </p>
-                    </div>    
-                </section>
-                <section>
-                    <img src="./cardano/cardano 1.jpg" alt="" class="tablecenter">
-                </section>
-            </article>
-                
-            <article onclick="window.location='./shibainu.html';">
-                <section>
-                    <div>
-                        <strong>THE GLOBAL PHENOMENON OF...</strong>
-                        <p>SHIBA INU (SHIB) stands as a decentralized, community-driven currency 
-                            embraced by millions worldwide...
-                        </p>
-                    </div>    
-                </section>
-                <section>
-                    <img src="./SHIBA INU/SHIBA INU 1.jpg" alt="" class="tablecenter">
-                </section>
-            </article>
-        
-            <article onclick="window.location='./avalanche.html';">
-                <section>
-                    <div>
-                        <strong>AVAX: REVOLUTIONIZING BLOCKCHAIN...</strong>
-                        <p>SHIBA INU (SHIB) stands as a decentralized, community-driven currency 
-                            embraced by millions worldwide...
-                        </p>
-                    </div>    
-                </section>
-                <section>
-                    <img src="./avalanche/avax 1.jpg" alt="" class="tablecenter">
-                </section>
-            </article>
-        
-            <article onclick="window.location='./tron.html';">
-                <section>
-                    <div>
-                        <strong>REVOLUTIONIZING CONTENT SHARING...</strong>
-                        <p>TRON (TRX) emerges as a decentralized blockchain-based operating system, 
-                            designed to empower content creators and revolutionize the digital entertainment industry...
-                        </p>
-                    </div>    
-                </section>
-                <section>
-                    <img src="./tron/tron 1.jpg" alt="" class="tablecenter">
-                </section>
-            </article>
-                
-            <article onclick="window.location='./polkadot.html';">
-                <section>
-                    <div>
-                        <strong>PIONEERING THE INTERCONNECTED...</strong>
-                        <p>Polkadot emerges as a groundbreaking open-source sharded multichain protocol, 
-                            ushering in the era of Web3—a decentralized internet of blockchains...
-                        </p>
-                    </div>    
-                </section>
-                <section>
-                    <img src="./polkadot/polkadot 1.jpg" alt="" class="tablecenter">
-                </section>
-            </article>
+            
         </div>
         <hr/>
        
@@ -229,5 +194,11 @@
 
     </div>      
     
+    <script src="./javascript/newelsetooldelse.js"></script>
+    <script src="./javascript/tiempo.js"></script>
+    <script src="./javascript/cryptovelas.js"></script>
+    <script src="./javascript/pricetimereal.js"></script>
+    <script src="./javascript/cryptovariation.js"></script>
+    <script src="./javascript/convertousd.js"></script>
 </body>
 </html>

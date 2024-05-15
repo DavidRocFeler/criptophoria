@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARTICLES</MAIN></title>
+    <title>Articles</MAIN></title>
     <link rel="stylesheet" href="./styletwe.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial/dist/chartjs-chart-financial.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0/dist/chartjs-adapter-luxon.min.js"></script>
 
 </head>
 <body>
@@ -16,34 +19,76 @@
             <table>
                 <thead>
                     <tr>
-                        <h2>Precio de Bitcoin</h2>
+                        <td class="header-container">
+                            <img src="./bitcoin/logo btc.png" alt="">
+                            <h2 id="cryptoName">Bitcoin</h2>
+                            <span>BTC</span>
+                            <select id="crypto-select" class="crypto-select">
+                             
+                            </select>
+                        </td>
                     </tr>
                 </thead>
-                <tbody id="bitcoin-precio">
-        <!-- Aquí se llenará el precio de Bitcoin -->
+
+                <tbody id="bitcoin-precio"></tbody>
+            
+            </table>
+
+            <div id="graficaMarket" class="button-container">
+                
+                <button data-period="15m">15m</button>
+                <button data-period="1h" >1h</button>
+                <button data-period="4h">4h</button>
+                <button data-period="8h">8h</button>
+                <button data-period="1d" >1d</button>
+                <button data-period="7d" >1w</button>
+                <button data-period="30d" >1M</button>
+               
+            </div>
+            <canvas id="myChart"></canvas>
+
+            <table>
+                <tbody >
+                    <tr id="metrics-data">
+                        <td class="tdtwe">Market cap (24h)</td>
+                        <td id="market-cap-variation"></td>
+                        <td id="market-cap-value"></td>
+                    </tr>
                 </tbody>
             </table>
-            <div>
-                
-                    <p id="bitcoin-price"></p>
-                        <button onclick="getHistoricalData('1d')">Último día</button>
-                        <button onclick="getHistoricalData('7d')">Últimos 7 días</button>
-                        <button onclick="getHistoricalData('30d')">Último mes</button>
-                        <button onclick="getHistoricalData('365d')">Último año</button>
-                        <button onclick="getHistoricalData('max')">Desde el inicio</button>
-            </div>
-            <canvas id="myChart" width="300" height="200" style="background-color: white; border: 1px solid black;"></canvas>
-
             
+            <table style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td id="trtwe">BTC to USD converter</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="single-container">
+                                <div class="btc-section">
+                                    <span class="btc-cell">BTC</span>
+                                    <input type="number" id="btc-input">
+                                </div>
+                                <div class="divider"></div>
+                                <div class="usd-section">
+                                    <span class="usd-cell">USD</span>
+                                    <span id="usd-output"></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          
         </div>
         <hr/>
-   
+        
         <div id="tabla2">
-                <div class="heater">
+                <div id="tableHeader">
                     
                         <a href="./home.html">Home</a>
                         <a href="./news.html">News</a>
-                        <a href="./learn.html">Learn</a>
+                        <a href="./learninprocess.html">Learn</a>
                         <a href="./jobs.html">Jobs</a>      
                     
                 </div> <hr/>
@@ -253,8 +298,11 @@
 
     </div>      
     
+    <script src="./javascript/cryptovelas.js"></script>
+    <script src="./javascript/pricetimereal.js"></script>
+    <script src="./javascript/cryptovariation.js"></script>
+    <script src="./javascript/convertousd.js"></script>
     <script src="./javascript/minustrong.js"></script>
-    <script src="./javascript/criptophoriamarket.js"></script>
-    <script src="./javascript/graficas.js"></script>
+    
 </body>
 </html>

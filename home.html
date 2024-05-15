@@ -3,7 +3,7 @@
    <head>
       <neta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Mi pagina web</title>
+      <title>Cryptoveloper</title>
       <link rel="stylesheet" type="text/css" href="./home.css">
    </head> 
    <body class="fondo">
@@ -15,17 +15,20 @@
             <a id="subscribe" href="./suscribete.html">Subscribe</a>
          </div>
          
-         <input type="search" class="search-input" placeholder="Search...">
+         <input type="search" class="search-input" id="searchInput" placeholder="Search...">
          <div class="search-icon">
-            <img src="./design/lupa blanca.png" alt="" >       
+            <img src="./design/lupa blanca.png" alt="" id="searchIcon" >       
          </div>
      </div>
    </header>
 
    <main>
       <div id="divHeader">
-         <div id="divLogo">
-             <img src="./design/logo criptophoria.png" alt="">
+         <div id="divLogo" onclick="window.location='./home.html';">
+            <img src="./design/logo criptophoria.png" alt="">
+         </div>
+         <div id="divTypografia" onclick="window.location='./home.html';">
+            <img src="./design/CRYPTOVELOPER TYPOGRAFIA.PNG" alt="">
          </div>
          <div id="encavezado-enlaces"> 
              <nav>
@@ -33,24 +36,43 @@
                  <li><a href="">Home</a></li>
                  <li><a href="./art.html">Articles</a></li>
                  <li><a href="./news.html">News</a></li>
-                 <li><a href="./learn.html">Learn</a></li>
+                 <li><a href="./learninprocess.html">Learn</a></li>
                  <li><a href="./jobs.html">Jobs</a></li> 
              </ul>  
              </nav>  
          </div>
-     </div>
-    
-      <div id="welcome-container">     
-         <p id="welcome"> Welcome to CRIPTOPHORIA, your ultimate destination for exploring cryptocurrencies and 
+      </div>
+
+      <div id="portada">
+
+         <div class="Cgi">
+            <img src="./design/CGI BTC copia.png" alt="">
+         </div>
+         <div class="Cgi">
+            <img src="./design/CGI ETH copia.png" alt="">
+         </div>
+         <div class="Cgi">
+            <img src="./design/USDT CGI copia.png" alt="">
+         </div>
+
+      </div>
+      
+     <div id="welcome-container">
+         <div id="welcome">     
+         <p> Welcome to cryptoveloper, your ultimate destination for exploring cryptocurrencies and 
                blockchain. Dive into informative articles, stay updated with latest news, learn web and 
                blockchain development and also you will find career opportunities. Join us for innovation and discovery.
-               Unleash your crypto potential in the exciting world of CRYPTOEUPHORIA!</p> 
-         <img src="./design/cryptoeuphoria logo.jpg" class="imagen-derecha" />           
+               Unleash your crypto potential in the exciting world of cryptoveloper!</p> 
+         </div>
+
+         <div id="imagenContainer">
+         <img src="./design/CRYPTOVELOPER.png"  />   
+         </div>        
       </div>
 
       <div >
-         <nav id="home-button">
-            <a href="./news.html">News</a>
+         <nav id="home-button" onclick="window.location='./news.html';">
+            <p>Go to news ></p>
          </nav>
       </div>
 
@@ -111,12 +133,21 @@
             </div>
          </article>
       </div>
+     
+      <div class="carousel-container">
+         <div class="carousel-slide">
+             <img src="./design/cryptoveloperfooter.jpg" alt="Image 1" class="carousel-image">
+             <img src="./design/cryptoveloperportada.jpg" alt="Image 2" class="carousel-image">
+         </div>
+     </div>
 
    <footer onclick="window.location='./suscribete.html';">    
       <div id="containerfooter">
-         <p>Copyright © 2024 Cryptoeuphoria. All rights reserved.</p>     
+         <p>Copyright © 2024 Cryptoveloper. All rights reserved.</p>     
       </div>
    </footer>
 
+   
+   <script src="./javascript/searchlupa.js"></script>
    </body>
 </html>

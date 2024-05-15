@@ -3,25 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARTICLES</MAIN></title>
+    <title>Jobs</MAIN></title>
     <link rel="stylesheet" href="./styletwe.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial/dist/chartjs-chart-financial.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0/dist/chartjs-adapter-luxon.min.js"></script>
+
 
 </head>
 <body>
     
     <div id="container">
   
-        <div id="tabla1">        
+        <div id="tabla1">   
+            <table>
+                <thead>
+                    <tr>
+                        <td class="header-container">
+                            <img src="./bitcoin/logo btc.png" alt="">
+                            <h2 id="cryptoName">Bitcoin</h2>
+                            <span>BTC</span>
+                            <select id="crypto-select" class="crypto-select">
+                             
+                            </select>
+                        </td>
+                    </tr>
+                </thead>
+
+                <tbody id="bitcoin-precio"></tbody>
+            
+            </table>
+
+            <div id="graficaMarket" class="button-container">
+                
+                <button data-period="15m">15m</button>
+                <button data-period="1h" >1h</button>
+                <button data-period="4h">4h</button>
+                <button data-period="8h">8h</button>
+                <button data-period="1d" >1d</button>
+                <button data-period="7d" >1w</button>
+                <button data-period="30d" >1M</button>
+               
+            </div>
+            <canvas id="myChart"></canvas>
+
+            <table>
+                <tbody >
+                    <tr id="metrics-data">
+                        <td class="tdtwe">Market cap (24h)</td>
+                        <td id="market-cap-variation"></td>
+                        <td id="market-cap-value"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td id="trtwe">BTC to USD converter</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="single-container">
+                                <div class="btc-section">
+                                    <span class="btc-cell">BTC</span>
+                                    <input type="number" id="btc-input">
+                                </div>
+                                <div class="divider"></div>
+                                <div class="usd-section">
+                                    <span class="usd-cell">USD</span>
+                                    <span id="usd-output"></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          
         </div>
         <hr/>
    
         <div id="tabla2">
                 <section>
-                    <div class="heater">
+                    <div id="tableHeader">
                         <a href="./home.html">Home</a>
                         <a href="./art.html">Articles</a> 
                         <a href="./news.html">News</a>     
-                        <a href="./learn.html">Learn</a>                                 
+                        <a href="./learninprocess.html">Learn</a>                                 
                     </div> 
                 </section> <hr/>
     
@@ -145,61 +214,6 @@
                 </section>
             </article>
                 
-            <article onclick="window.location='./shibainu.html';">
-                <section>
-                    <div>
-                        <strong>THE GLOBAL PHENOMENON OF...</strong>
-                        <p>SHIBA INU (SHIB) stands as a decentralized, community-driven currency 
-                            embraced by millions worldwide...
-                        </p>
-                    </div>    
-                </section>
-                <section>
-                    <img src="./SHIBA INU/SHIBA INU 1.jpg" alt="" class="tablecenter">
-                </section>
-            </article>
-        
-            <article onclick="window.location='./avalanche.html';">
-                <section>
-                    <div>
-                        <strong>AVAX: REVOLUTIONIZING BLOCKCHAIN...</strong>
-                        <p>SHIBA INU (SHIB) stands as a decentralized, community-driven currency 
-                            embraced by millions worldwide...
-                        </p>
-                    </div>    
-                </section>
-                <section>
-                    <img src="./avalanche/avax 1.jpg" alt="" class="tablecenter">
-                </section>
-            </article>
-        
-            <article onclick="window.location='./tron.html';">
-                <section>
-                    <div>
-                        <strong>REVOLUTIONIZING CONTENT SHARING...</strong>
-                        <p>TRON (TRX) emerges as a decentralized blockchain-based operating system, 
-                            designed to empower content creators and revolutionize the digital entertainment industry...
-                        </p>
-                    </div>    
-                </section>
-                <section>
-                    <img src="./tron/tron 1.jpg" alt="" class="tablecenter">
-                </section>
-            </article>
-                
-            <article onclick="window.location='./polkadot.html';">
-                <section>
-                    <div>
-                        <strong>PIONEERING THE INTERCONNECTED...</strong>
-                        <p>Polkadot emerges as a groundbreaking open-source sharded multichain protocol, 
-                            ushering in the era of Web3—a decentralized internet of blockchains...
-                        </p>
-                    </div>    
-                </section>
-                <section>
-                    <img src="./polkadot/polkadot 1.jpg" alt="" class="tablecenter">
-                </section>
-            </article>
         </div>
         <hr/>
        
@@ -209,6 +223,11 @@
 
     </div>      
     
+    <script src="./javascript/newelsetooldelse.js"></script>
+    <script src="./javascript/cryptovelas.js"></script>
+    <script src="./javascript/pricetimereal.js"></script>
+    <script src="./javascript/cryptovariation.js"></script>
+    <script src="./javascript/convertousd.js"></script>
     <script src="./javascript/tiempo.js"></script>
 </body>
 </html>
