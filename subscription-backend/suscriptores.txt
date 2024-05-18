@@ -1,0 +1,20 @@
+{"name":"qweadsd","email":"qadas@gmail.com","whatsapp":"925911284","country":"Peru","date":"2024-05-16T23:18:24.453Z"}
+{"name":"qweadsd","email":"qadas@gmail.com","whatsapp":"925911284","country":"Peru","date":"2024-05-16T23:18:30.621Z"}
+{"name":"qweadsd","email":"qadas@gmail.com","whatsapp":"925911284","country":"Peru","date":"2024-05-16T23:18:37.093Z"}
+{"name":"David ","email":"david.rengifo1930@gmail.com","whatsapp":"925911284","country":"Peru","date":"2024-05-16T23:19:33.117Z"}
+{"name":"claudia ","email":"claudiafernanda@gmail.com","whatsapp":"957304157","country":"Netherlands","date":"2024-05-16T23:27:55.931Z"}
+{"name":"claudai","email":"faad@gmail.com","whatsapp":"9999999999","country":"Peru","date":"2024-05-16T23:31:23.807Z"}
+{"name":"david","email":"david.rengifo@gmail.com","whatsapp":"925911284","country":"Peru","date":"2024-05-16T23:33:46.162Z"}
+{"name":"natan","email":"natan@gmail.com","whatsapp":"910915911","country":"Netherlands","date":"2024-05-16T23:34:54.934Z"}
+{"name":"david","email":"sadad@gmail.com","whatsapp":"925911282","country":"Peru","date":"2024-05-16T23:38:13.091Z"}
+{"name":"eva","email":"eva@ucvvirtual.edu.pe","whatsapp":"925911284","country":"China","date":"2024-05-16T23:42:17.703Z"}
+{"name":"davud","email":"david.rengf@gmail.com","whatsapp":"925911284","country":"Peru","date":"2024-05-17T00:15:29.712Z"}
+{"name":"david","email":"natan@ucvvirtual.edu.pe","whatsapp":"68686868","date":"2024-05-17T01:27:59.912Z"}
+{"name":"juli","email":"juli@ucvvirtual.edu.pe","whatsapp":"9898989","date":"2024-05-17T01:34:58.692Z"}
+{"name":"dav","email":"rdrd@ucvvirtual.edu.pe","whatsapp":"925911284","date":"2024-05-17T01:39:02.106Z"}
+{"name":"juli","email":"juli@ucvvirtual.edu.pe","whatsapp":"925911284","country":"Peru","date":"2024-05-17T01:40:43.177Z"}
+{"name":"david","email":"david@ucvvirtual.edu.pe","whatsapp":"925911284","country":"Peru","date":"2024-05-17T01:48:10.102Z"}
+{"name":"eva","email":"juli@ucvvitual.edu.pe","whatsapp":"+51925911284","country":"Peru","date":"2024-05-17T02:11:27.048Z"}
+{"name":"carlo","email":"carlos@ucvvirtual.edu","whatsapp":"+433243242","country":"Austria","date":"2024-05-17T02:21:01.809Z"}
+{"name":"natan","email":"natan@hotmail.com","whatsapp":"","country":"Peru","date":"2024-05-17T02:32:28.933Z"}
+{"name":"angola","email":"angola@yahoo.com","whatsapp":"+24423232323","country":"Angola","date":"2024-05-17T02:33:19.556Z"}

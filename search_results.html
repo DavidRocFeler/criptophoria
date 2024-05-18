@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="./stylevijf.css">
+</head>
+<body class="fondo">
+
+        <header>
+           
+           <div class="search-container">
+              <div>
+                 <a id="subscribe" href="./suscribete.html">Subscribe</a>
+              </div>
+              
+              <input type="search" class="search-input" id="searchInput" placeholder="Search...">
+              <div class="search-icon">
+                 <img src="./design/lupa blanca.png" alt="" id="searchIcon" >       
+              </div>
+          </div>
+        </header>
+     
+        <main>
+           <div id="divHeader">
+              <div id="divLogo" onclick="window.location='./home.html';">
+                 <img src="./design/logo criptophoria.png" alt="">
+              </div>
+              <div id="divTypografia" onclick="window.location='./home.html';">
+                 <img src="./design/CRYPTOVELOPER TYPOGRAFIA.PNG" alt="">
+              </div>
+              <div id="encavezado-enlaces"> 
+                  <nav>
+                    <ul> 
+                      <li><a href="./home.html">Home</a></li>
+                      <li><a href="./art.html">Articles</a></li>
+                      <li><a href="./news.html">News</a></li>
+                      <li><a href="./learninprocess.html">Learn</a></li>
+                      <li><a href="./jobs.html">Jobs</a></li> 
+                    </ul>  
+                  </nav>  
+              </div>
+           </div>
+
+            <div>
+                <h1>Search Results</h1>
+                <div id="results"></div>
+            </div>
+        </main>
+
+        
+      
+         
+    <script src="./javascript/searchlupa.js"></script>
+    <script src="./javascript/filter-results.js"></script>
+    
+</body>
+</html>

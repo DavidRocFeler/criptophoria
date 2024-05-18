@@ -24,9 +24,7 @@
                             <img src="./bitcoin/logo btc.png" alt="">
                             <h2 id="cryptoName">Bitcoin</h2>
                             <span>BTC</span>
-                            <select id="crypto-select" class="crypto-select">
-                             
-                            </select>
+                            <select id="crypto-select" class="crypto-select"></select>
                         </td>
                     </tr>
                 </thead>
@@ -34,6 +32,87 @@
                 <tbody id="bitcoin-precio"></tbody>
             
             </table>
+
+            <table>
+                <tbody >
+                    <tr id="metrics-data">
+                        <td class="tdtwe">Market cap (24h)</td>
+                        <td id="market-cap-variation"></td>
+                        <td id="market-cap-value"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody >
+                    <tr id="metrics-data">
+                        <td class="tdtwe">Total supply</td>
+                        <td class="espacio">-</td>
+                        <td id="total-supply"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody >
+                    <tr id="metrics-data">
+                        <td class="tdtwe">Max. supply</td>
+                        <td class="espacio">-</td>
+                        <td id="max-supply"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table>
+                <tbody >
+                    <tr id="metrics-data">
+                        <td class="tdtwe">Fully diluted mark.</td>
+                        <td class="espacio2">-</td>
+                        <td id="fdmc"> 
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody >
+                    <tr id="price-data-time">
+                        <td class="tdtwe">Price performance</td>
+                        <td ></td>
+                        <td id="custom-select">
+                            <div >
+                                <select class="select-selected">
+                                    <option value="24h">24h</option>
+                                    <option value="30d">1m</option>
+                                    <option value="52w">1y</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table>
+                <tbody >
+                    <tr id="low-high">
+                        <td id="low">Low</td>
+                        
+                        <td id="high"> High </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody >
+                    <tr id="low-high-price">
+                        <td id="precio-de-low"></td>
+                        <td >-</td>
+                        <td id="precio-de-high"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+           
+            <canvas id="myChart"></canvas>
 
             <div id="graficaMarket" class="button-container">
                 
@@ -46,18 +125,7 @@
                 <button data-period="30d" >1M</button>
                
             </div>
-            <canvas id="myChart"></canvas>
 
-            <table>
-                <tbody >
-                    <tr id="metrics-data">
-                        <td class="tdtwe">Market cap (24h)</td>
-                        <td id="market-cap-variation"></td>
-                        <td id="market-cap-value"></td>
-                    </tr>
-                </tbody>
-            </table>
-            
             <table style="width: 100%;">
                 <tbody>
                     <tr>
@@ -223,6 +291,8 @@
 
     </div>      
     
+    <script src="./javascript/lowhigh.js"></script>
+    <script src="./javascript/supply.js"></script>
     <script src="./javascript/newelsetooldelse.js"></script>
     <script src="./javascript/cryptovelas.js"></script>
     <script src="./javascript/pricetimereal.js"></script>

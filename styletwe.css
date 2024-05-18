@@ -3,11 +3,20 @@ body {
    
   
   }
+#tabla1:hover {
+  background-color: #f4f2ee;
+}
 #tabla1 {    
     background-color: white;
+    
     overflow-y: auto;
     width: 24%;   
+    transition: 1s;
+    overflow: hidden;
+   
 }
+
+
 .tableleft {
   width: 20vw;
   height: 11.5vw;
@@ -32,29 +41,39 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #667389;
 }
+#crypto-select {
+  border: none;
+  margin-left: 9.3em;
+  background-color: #f4f2ee;
+}
+
 #bitcoin-precio {
+    
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: xxx-large;
     font-weight: bold;
     margin-left: 0.1em;
     line-height: 0.5em;
+    height: 1.5em;
+    
 }
 #graficaMarket {
   margin-bottom: 1.5em;
 }
 #myChart {
-  margin-bottom: 1em;
-  border: 1px solid #667389;
+  margin-top: 1em;
+  border: 3px solid #c4cad3;
   margin-right: 1em;
 }
 .button-container {
-  margin-top: 3em;
+  margin-top: 1em;
  
 }
 .button-container button {
   cursor: pointer;
-  margin-right: 0.5em;
+  margin-right: 0.48em;
   font-size: 0.9em;
+  border: 2px solid #c4cad3;
 }
 .button-container button:hover {
   background-color: #b9b7b76e;
@@ -63,6 +82,56 @@ body {
 #metrics-data {
   margin-bottom: 1em;
   display: block;
+  
+}
+
+#custom-select {
+  padding-left: 6.7em;
+} 
+.select-selected {
+  border: none;
+  background-color: #f4f2ee;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Your existing CSS */
+#precio-de-low {
+  
+  padding-right: 5.5em;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#precio-de-high {
+  padding-left: 6.9em;
+  padding-top: 0.2em;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#low-price {
+  
+  display: block;
+}
+#low-high-price {
+  margin-bottom: 1em;
+  display: block;
+  line-height: 0em;
+}
+#low {
+  padding-right: 8.65em;
+  padding-left: 0.1em;
+  font-weight: bold;
+  color: #667389;
+  font-size: 0.79em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#high {
+  padding-left: 9em;
+  font-weight: bold;
+  color: #667389;
+  font-size: 0.79em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .tdtwe {
   padding-right: 1em;
@@ -85,7 +154,36 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-
+#total-supply {
+  padding-left: 1em;
+  padding-top: 0.2em;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#max-supply {
+  padding-left: 1em;
+  padding-top: 0.2em;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#fdmc {
+  padding-left: 1em;
+  padding-top: 0.2em;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.espacio {
+  padding-left: 2.75em;
+  padding-right: 2.45em;
+  
+}
+.espacio2 {
+  padding-left: 0.3em;
+  padding-right: 1em;
+}
 #trtwe {
   display: block;
   margin-bottom: 1em;
@@ -95,7 +193,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .single-container {
-  border: 1px solid #667389;
+  border: 3px solid #c4cad3;
   width: 95%; /* Ajusta el ancho al 90% de la columna */
   height: 2em;
   display: flex;
@@ -114,8 +212,8 @@ body {
   box-sizing: border-box; 
 }
 .divider {
-  width: 1px;
-  background-color: #667389;
+  width: 3px;
+  background-color: #c4cad3;
   height: 100%;
 }
 .btc-section {
@@ -146,7 +244,7 @@ body {
 
 #tabla2 {
     overflow-y: auto;
-    max-height: 43em;
+    max-height: calc(100vh - 20px);
     width:52%;
     font-size: 15px;
     }
@@ -161,7 +259,12 @@ body {
     border-radius: 10px;
     margin-right: 4em;
 }
+#tableHeader:hover {
+  background-color: #f4f2ee;
+}
 #tableHeader {
+    height: 2em;
+    transition: 1s;
     padding-top: 1em;
     width: 100%;
     display: flex;
@@ -248,10 +351,14 @@ strong {
   width: 12em;
 }
 
+#tabla3:hover {
+  background-color: #f4f2ee;
+}
 #tabla3 {
   background-color: white;
   overflow-y: auto;
   width: 24%; 
+  transition: 1s;
   }
   .tablerigth {
     width: 20vw;
@@ -259,8 +366,4 @@ strong {
    
     border-radius: 10px;
     margin-left: 7%;
-}
-#crypto-select {
-  border: none;
-
 }

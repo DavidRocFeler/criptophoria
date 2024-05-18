@@ -3,72 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUBSCRIPTION</MAIN></title>
+    <title>Subscription</title>
     <link rel="stylesheet" href="./styletew.1.css">
+    <link rel="stylesheet" href="./phone-number-validation/build/css/demo.css">
+    <link rel="stylesheet" href="./phone-number-validation/build/css/intlTelInput.css">
 
 </head>
 <body>
-    
     <div id="container">
-  
-        <div id="tabla1" class="background-image">        
-        </div>
+        <div id="tabla1" class="background-image"></div>
         <hr/>
-   
         <div id="tabla2">
-                <section>
-                    <div class="heater">
-                        <a href="./home.html">Home</a>
-                        <a href="./art.html">Articles</a>
-                        <a href="./news.html">News</a>
-                        <a href="./learn.html">Learn</a>
-                        <a href="./jobs.html">Jobs</a>      
-                    </div> 
-                </section> <hr/>
-                           
-                <form>
-                    <div class="boxsubscribe" >
-                        <h1>Full name or nickname</h1>
-                        <input type="text" name="" placeholder="">
-                    </div>
+            <section>
+                <div class="heater">
+                    <a href="./home.html">Home</a>
+                    <a href="./art.html">Articles</a>
+                    <a href="./news.html">News</a>
+                    <a href="./learninprocess.html">Learn</a>
+                    <a href="./jobs.html">Jobs</a>      
+                </div> 
+            </section> 
+            <hr/>
+            <form id="subscriptionForm">
+                <div class="boxsubscribe">
+                    <h1>Full name or nickname</h1>
+                    <input type="text" id="name" placeholder="">
+                </div>
                 <hr/>
-            
-                    <div class="boxsubscribe" >
-                        <h1>E-mail</h1>
-                        <input type="email" name="" placeholder="" />
-                    </div>
+                <div class="boxsubscribe">
+                    <h1>E-mail</h1>
+                    <input type="email" id="email" placeholder="" />
+                </div>
                 <hr/>
-        
-                    <div class="boxsubscribe" >
-                        <h1>Whatsapp</h1>
-                        <input type="number" name="" placeholder="">
-                    </div>
-                <hr/>
-
-                    <div class="boxsubscribe">
-                        <h1>Country</h1>
-                        <select name="country" id="country-select" disabled>
-                            <option value="" disabled selected></option>
+                <div class="boxsubscribe">
+                    <h1>Country</h1>
+                    <select id="country-select" disabled>
+                        <option value="" disabled selected></option>
                         <!-- Las opciones se generarán dinámicamente aquí -->
-                        </select>
-                    </div>
+                    </select>
+                </div>
                 <hr/>
-
-                    <div class="boxsubscribe">
-                        <button>Enviar</button>
-                    </div>
-            
-                </form> 
-
+                <div class="boxsubscribe">
+                    <h1>Whatsapp</h1>
+                    <input type="tel" id="whatsapp" placeholder="optional" >
+                </div>
+                <hr/>
+             
+                <div class="boxsubscribe">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </div>
         <hr/>
-       
-        <div id="tabla3" class="background-image">
-        </div>
+        <div id="tabla3" class="background-image"></div>
         <hr/>
-
     </div>      
-    
+
     <script src="./javascript/countries.js"></script>
+    <script src="./phone-number-validation/build/js/intlTelInput.js"></script>
+    <script src="./javascript/sendform.js"></script>
+    <script>
+        
+      document.addEventListener('DOMContentLoaded', function() {
+    var input = document.querySelector("#whatsapp");
+    var iti = window.intlTelInput(input, {
+        separateDialCode: true,
+        initialCountry: "auto",
+        nationalMode: false,
+        utilsScript: "./phone-number-validation/build/js/utils.js"
+    });
+
+    // Almacena el prefijo actual
+    var currentDialCode = "";
+
+    // Listener para el cambio de país
+    input.addEventListener("countrychange", function() {
+        currentDialCode = iti.getSelectedCountryData().dialCode;
+        input.value = "+" + currentDialCode;
+        input.readOnly = false;
+    });
+
+    // Previene que el usuario borre el prefijo
+    input.addEventListener("keydown", function(event) {
+        var cursorPosition = input.selectionStart;
+        if (cursorPosition <= currentDialCode.length + 1 && (event.key === "Backspace" || event.key === "Delete")) {
+            event.preventDefault();
+        }
+    });
+
+    // Previene que el usuario escriba antes del prefijo
+    input.addEventListener("input", function() {
+        if (!input.value.startsWith("+" + currentDialCode)) {
+            input.value = "+" + currentDialCode + input.value.replace("+" + currentDialCode, "");
+        }
+    });
+});
+
+
+    </script>
+
 </body>
 </html>
